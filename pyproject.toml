@@ -1,0 +1,16 @@
+[project]
+name = "mcp-internal-tool-docs"
+version = "0.1.0"
+description = "MCP server that serves llms.txt package documentation from a directory"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+authors = [{ name = "Alex Pradas" }]
+dependencies = ["fastmcp"]
+
+[project.scripts]
+mcp-internal-tool-docs = "mcp_internal_tool_docs:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
