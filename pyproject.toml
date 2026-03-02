@@ -1,5 +1,5 @@
 [project]
-name = "mcp-internal-tool-docs"
+name = "internal-tool-docs-mcp"
 version = "0.1.0"
 description = "MCP server that serves llms.txt package documentation from a directory"
 readme = "README.md"
@@ -9,7 +9,10 @@ authors = [{ name = "Alex Pradas" }]
 dependencies = ["fastmcp"]
 
 [project.scripts]
-mcp-internal-tool-docs = "mcp_internal_tool_docs:main"
+internal-tool-docs-mcp = "mcp_internal_tool_docs:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_internal_tool_docs"]
 
 [build-system]
 requires = ["hatchling"]

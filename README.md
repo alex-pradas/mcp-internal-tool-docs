@@ -1,11 +1,11 @@
-# mcp-internal-tool-docs
+# internal-tool-docs-mcp
 
 A lightweight MCP server that serves `llms.txt` API documentation for internal packages.
 
 ## Install
 
 ```bash
-pip install mcp-internal-tool-docs
+pip install internal-tool-docs-mcp
 ```
 
 ## Usage
@@ -21,13 +21,13 @@ docs/
 Run the server:
 
 ```bash
-mcp-internal-tool-docs --path ./docs
+internal-tool-docs-mcp --path ./docs
 ```
 
 Or via `uvx` (no install needed):
 
 ```bash
-uvx mcp-internal-tool-docs --path ./docs
+uvx internal-tool-docs-mcp --path ./docs
 ```
 
 ## Configure in `.mcp.json`
@@ -37,7 +37,7 @@ uvx mcp-internal-tool-docs --path ./docs
   "mcpServers": {
     "internal-tool-docs": {
       "command": "uvx",
-      "args": ["mcp-internal-tool-docs", "--path", "./docs"]
+      "args": ["internal-tool-docs-mcp", "--path", "./docs"]
     }
   }
 }
